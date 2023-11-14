@@ -5,8 +5,11 @@ import { useState, useEffect } from "react";
 
 export function Navbar({ children }) {
   return (
-    <Flex className="fixed top-[-0.25rem] z-40 h-20 w-full rounded-[1rem] flex items-center justify-between bg-opacity-50 font-semibold text-lg"
-    pr='8em'
+    <Flex
+      className="fixed top-[-0.25rem] z-40 h-20 w-full rounded-[1rem] flex items-center justify-between bg-opacity-50 font-semibold text-lg"
+      pr="8em"
+      ml="4em"
+      mr="3em"
     >
       <Image src="/logoJess.png" alt="Tu Logo" w="90px" h="80px" mt="2" />
       <Box>{children}</Box>

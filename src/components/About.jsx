@@ -6,8 +6,8 @@ import MailIcon from '@mui/icons-material/Mail';
 
 function About() {
   return (
-    <Grid id="#about">
-      <Heading color="#D52AA6" justify="center" textAlign="center" >About</Heading>
+    <Grid id="#about" mt='5rem' mb='5rem' pl='100px' pr='100px'>
+      <Heading color="#D52AA6" justify="center" textAlign="center" letterSpacing=".1em" >About</Heading>
       <Flex alignItems='center' mt='4'>
         <Box flex='1'>
           <Image alt="image"
@@ -18,7 +18,7 @@ function About() {
            src="https://alaaweb.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fabouttt.c4a84d46.png&w=828&q=75" />
         </Box>
         <Box flex='1' flexDirection='column' >
-          <Text fontSize='lg' color='#242B33' fontWeight='400' pr='4' mb='6'>
+          <Text fontSize='lg' color='#242B33' fontWeight='400' pr='4' mb='6' className='leading-relaxed'>
           I am a front-end developer who constantly seeks out innovate solutions to everyday problem. 
           I'm a challenger by heart, and builder by nature. 
           I have spent time converting designs into pixel-perfect, performat, accesible and responsive applications/websites, with a variety of front-end development technologies, using Modern frameworks. 
