@@ -1,14 +1,15 @@
 import "./globals.css";
 import { Providers } from "./providers";
 import { Navbar, NavbarLink } from "../components/NavBar";
-import logoJess from "../../public/logoJess.png";
+import Head from 'next/head';
+
 
 
 export const metadata = {
-  title: "My Portfolio",
+  title: "Jessi Portfolio",
   description: "My personal portfolio",
   keywords: "portfolio, nextjs, tailwindcss",
-  image: logoJess,
+  image: "/logoJess.png",
 };
 
 const links = [
@@ -37,6 +38,10 @@ const links = [
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <title>Jessi Portfolio</title>
+        <meta property="og:image" content={metadata.image} />
+      </Head>
       <body>
         <Navbar>
           {links.map((link) => (
