@@ -1,66 +1,127 @@
 "use client";
-import React from "react";
-import { Flex, Button, Image, Box } from "@chakra-ui/react";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { Flex, Box, Image, Button } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import { css } from "@emotion/css";
 
-export function Navbar({ children }) {
-  return (
-    <Flex
-      className="fixed top-[-0.25rem] z-40 h-20 w-full rounded-[1rem] flex items-center justify-between bg-opacity-50 font-semibold text-lg"
-      pr="8em"
-      ml="4em"
-      mr="3em"
-    >
-      <Image src="/logoJess.png" alt="Tu Logo" w="90px" h="80px" mt="2" />
-      <Box>{children}</Box>
-    </Flex>
-  );
-}
+const links = [
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#skills", label: "Skills" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
+];
 
-export function NavbarLink({ href, children }) {
-  const [currentPage, setCurrentPage] = useState("/");
+function NavBar() {
+  const { scrollY } = useScroll();
 
+  const [blurIntensity, setBlurIntensity] = useState(0);
+
+  const [activeSection, setActiveSection] = useState("home"); // Inicializa con la sección inicial
+
+  // Detecta la sección actual basándose en el valor del scrollY
   useEffect(() => {
-    // Obtén la ruta actual cuando la página se carga
-    const currentPath = window.location.hash;
-    setCurrentPage(currentPath);
-  }, []);
+    const sections = ["home", "about", "skills", "projects", "contact"];
+    const sectionOffsets = sections.map((section) => ({
+      section,
+      offsetTop: document.getElementById(section)?.offsetTop || 0,
+    }));
 
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
+    const currentSection = sectionOffsets.find(
+      ({ offsetTop }, index) =>
+        offsetTop <= scrollY &&
+        (sectionOffsets[index + 1]?.offsetTop || Infinity) > scrollY
+    );
 
-  const isActive = currentPage === href; // Verifica si este enlace es la página actual
+    if (currentSection) {
+      setActiveSection(currentSection.section);
+    }
+  }, [scrollY]);
 
-  const activeStyles = {
-    backgroundColor: "hsla(0, 0%, 99%, 0.9)",
-    borderRadius: ".5rem",
-    color: "rgb(213 41 166 / 100%)",
-    backdropFilter: "blur(4rem)",
-    paddingTop: "4",
-    paddingBottom: "4",
-    paddingRight: "12",
-    paddingLeft: "12",
-  };
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const blurIncrement = 0.1;
+    const maxBlur = 10;
 
-  const hoverStyles = {
-    boxShadow: "0 6px 4px rgba(0, 0, 0, 0.07), 0 2px 2px rgba(0, 0, 0, 0.06)",
-  };
+    if (latest > 150) {
+      const newBlurIntensity = Math.min(
+        (latest - 150) * blurIncrement,
+        maxBlur
+      );
+      setBlurIntensity(newBlurIntensity);
+      const sections = ["home", "about", "skills", "projects", "contact"];
+      const sectionTops = sections.map(
+        (section) => document.getElementById(section)?.offsetTop || 0
+      );
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        if (latest >= sectionTops[i]) {
+          setActiveSection(sections[i]);
+          break;
+        }
+      }
+    } else {
+      setBlurIntensity(0);
+    }
+  });
 
   return (
-    <Button
-      as="a"
-      href={href}
-      ml="80"
-      color={isActive ? "rgb(213 41 166 / 100%)" : "white"} // Establece el color en función de si es la página actual
-      bgColor="transparent"
-      gap="1.25rem"
-      letterSpacing="1px"
-      onClick={() => handlePageChange(href)} // Llama a la función para cambiar la página al hacer click
-      _hover={isActive ? hoverStyles : {}}
-      {...(isActive ? activeStyles : {})}
+    <motion.nav
+      style={{
+        backdropFilter: `blur(${blurIntensity}px)`,
+        backgroundColor: `linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%), ${
+          blurIntensity > 0 ? 0.8 : 0
+        })`,
+        position: "fixed", // Añade esta línea para mantener la barra en la parte superior
+        width: "100%", // Añade esta línea para ocupar el ancho completo
+        top: 0, // Añade esta línea para fijar la barra en la parte superior
+        zIndex: 1000, // Añade esta línea para asegurar que esté encima de otros elementos
+      }}
+      initial={{ y: 0 }} // Añade esta línea para evitar que la barra comience oculta
+      animate={{ y: 0 }} // Añade esta línea para evitar que la barra comience oculta
     >
-      {children}
-    </Button>
+      <Flex
+        justifyContent="space-between"
+        alignItems="center"
+        w="full"
+        pl="100px"
+        pr="100px"
+        pt='1rem'
+        rounded='2xl'
+      >
+        <Box>
+          <Image src="/logoJess.png" alt="Jessica Brito" w="80px" h="70px" />
+        </Box>
+        <Flex gap='4rem' alignItems="center" >
+          {links.map((link) => (
+            <Link href={link.href} key={link.label} >
+              <Button
+                color={
+                  activeSection === link.label.toLowerCase()
+                    ? "#D52AA6"
+                    : "white"
+                }
+                fontSize="18px"
+                fontWeight="bold"
+                letterSpacing='.1em'
+                className={
+                  activeSection === link.label.toLowerCase()
+                    ? "bg-[hsla(0,0%,99%,.9)] rounded-lg px-4 p-1 shadow-white hover:shadow-sm drop-shadow-md"
+                    : "transparent"
+                }
+                // _hover={{ bg: 'transparent', color: 'white' }}
+                onClick={() => {
+                  setActiveSection(link.label.toLowerCase());
+                }}
+              >
+                {link.label}
+              </Button>
+            </Link>
+          ))}
+        </Flex>
+      </Flex>
+    </motion.nav>
   );
 }
+
+export default NavBar;

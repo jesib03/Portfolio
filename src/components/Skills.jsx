@@ -80,16 +80,22 @@ function Skills() {
          <Circle
           size="90px"
           bg="rgba(221, 196, 203, 0.5)"
-          boxShadow="5px 10px 20px 2px #888888"
+          boxShadow="5px 10px 20px 2px #687170"
           mt="4"
           position="relative"
         >
           <Image src="https://profilinator.rishav.dev/skills-assets/chakraui.png" p='2'  alt='chakraui'/>
         </Circle>
         <Circle
-          size="90px"
+          size="5.3rem"
           bg="rgba(221, 196, 203, 0.5)"
-          boxShadow="5px 10px 20px 2px #888888"
+          border="2px solid transparent"
+          boxShadow={{
+            base: "0 3px 6px 0 rgba(0, 0, 0, 0.1)",
+            md: "0 5px 8px -2px rgba(0, 0, 0, 0.2)",
+            lg: "0 8px 10px -4px rgba(0, 0, 0, 0.2)",
+            xl: "0 10px 14px -6px rgba(0, 0, 0, 0.25)",
+          }}
           mt="4"
           position="relative"
         >
@@ -107,7 +113,7 @@ function Skills() {
         <Circle
           size="90px"
           bg="rgba(221, 196, 203, 0.5)"
-          boxShadow="5px 10px 20px 2px #888888"
+          boxShadow="5px 10px 20px 2px #687170"
           mt="4"
           position="relative"
         >
@@ -117,7 +123,7 @@ function Skills() {
         <Circle
           size="90px"
           bg="rgba(221, 196, 203, 0.5)"
-          boxShadow="5px 10px 20px 2px #888888"
+          boxShadow="5px 10px 20px 2px #687170"
           mt="4"
           position="relative"
         >
@@ -126,7 +132,7 @@ function Skills() {
         <Circle
           size="90px"
           bg="rgba(221, 196, 203, 0.5)"
-          boxShadow="5px 10px 20px 2px #888888"
+          boxShadow="5px 10px 20px 2px #687170"
           mt="4"
           position="relative"
         >

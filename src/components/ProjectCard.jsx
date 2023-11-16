@@ -129,7 +129,7 @@ function ProjectCard({projects}) {
         zIndex="-10"
         height="300px"
         width="300px"
-        WebkitFilter="blur(150px)"
+       
         right="-40"
         top="40%"
         ></Image>
