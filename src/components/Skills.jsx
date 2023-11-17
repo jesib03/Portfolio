@@ -6,7 +6,7 @@ import {
   Image,
   SimpleGrid,
   Circle,
-  Avatar,
+  Tooltip,
 } from "@chakra-ui/react";
 
 function Skills() {
@@ -41,103 +41,128 @@ function Skills() {
         mr="4em"
         justify='center'
       >
+        <Tooltip hasArrow label='HTML' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Image
           src="https://alaaweb.vercel.app/_next/static/media/html.485a9935.svg"
           alt="html"
         />
+        </Tooltip>
+        <Tooltip hasArrow label='CSS' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Image
           src="https://alaaweb.vercel.app/_next/static/media/css.0279b945.svg"
           alt="css"
         />
+        </Tooltip>
+        <Tooltip hasArrow label='JAVASCRIPT' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Image
           src="https://alaaweb.vercel.app/_next/static/media/js.e3d0a4f7.svg"
           alt="javascript"
         />
+        </Tooltip>
+        <Tooltip hasArrow label='REACT' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Image
           src="https://alaaweb.vercel.app/_next/static/media/react2.a1ee3299.svg"
           alt="react"
         />
+        </Tooltip>
+        <Tooltip hasArrow label='REDUX' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Image
           src="https://alaaweb.vercel.app/_next/static/media/redux.6b8e529c.svg"
           alt="redux"
         />
+        </Tooltip>
+        <Tooltip hasArrow label='NEXT.JS' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Image
           src="https://alaaweb.vercel.app/_next/static/media/nextjs.34b739d6.svg"
           alt="next"
         />
+        </Tooltip>
+        <Tooltip hasArrow label='FIGMA' bgColor='#D570A6' placement="top" fontWeight='700'>
           <Image
           src="https://alaaweb.vercel.app/_next/static/media/figma.e2e21306.svg"
           alt="figma"
         />
+        </Tooltip>
+        <Tooltip hasArrow label='TaiwlindCSS' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Image
           src="https://alaaweb.vercel.app/_next/static/media/tcss.18c8f69f.svg"
           alt="taiwlind"
         />
+        </Tooltip>
+        <Tooltip hasArrow label='MUI' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Image
           src="https://alaaweb.vercel.app/_next/static/media/mui2.2ad676c9.svg"
           alt="materialUI"
         />
+        </Tooltip>
+        <Tooltip hasArrow label='ChakraUI' bgColor='#D570A6' placement="top" fontWeight='700'>
          <Circle
-          size="90px"
-          bg="rgba(221, 196, 203, 0.5)"
-          boxShadow="5px 10px 20px 2px #687170"
+          size="5.2rem"
+          bg="rgba(221, 196, 203, 0.38)"
+          boxShadow='10px 0px 10px 0px rgba(88, 81, 80, 0.4)'
           mt="4"
           position="relative"
         >
           <Image src="https://profilinator.rishav.dev/skills-assets/chakraui.png" p='2'  alt='chakraui'/>
         </Circle>
+        </Tooltip>
+        <Tooltip hasArrow label='ChartJS' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Circle
-          size="5.3rem"
-          bg="rgba(221, 196, 203, 0.5)"
-          border="2px solid transparent"
-          boxShadow={{
-            base: "0 3px 6px 0 rgba(0, 0, 0, 0.1)",
-            md: "0 5px 8px -2px rgba(0, 0, 0, 0.2)",
-            lg: "0 8px 10px -4px rgba(0, 0, 0, 0.2)",
-            xl: "0 10px 14px -6px rgba(0, 0, 0, 0.25)",
-          }}
+          size="5.2rem"
+          bg="rgba(221, 196, 203, 0.38)"
+          boxShadow='10px 0px 10px 0px rgba(88, 81, 80, 0.4)'
           mt="4"
           position="relative"
+          
         >
           <Image src="https://profilinator.rishav.dev/skills-assets/logo-title.svg" p='2' alt='chartjs' />
         </Circle>
+        </Tooltip>
+        <Tooltip hasArrow label='GIT' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Image
           src="https://alaaweb.vercel.app/_next/static/media/git.37654ac9.svg"
           alt="git"
         />
+        </Tooltip>
+        <Tooltip hasArrow label='GITHUB' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Image
           src="https://alaaweb.vercel.app/_next/static/media/github.882ca645.svg"
           alt="github"
         />
-
+        </Tooltip>
+        <Tooltip hasArrow label='NODE.JS' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Circle
-          size="90px"
-          bg="rgba(221, 196, 203, 0.5)"
-          boxShadow="5px 10px 20px 2px #687170"
+          size="5.2rem"
+          bg="rgba(221, 196, 203, 0.38)"
+          boxShadow='10px 0px 10px 0px rgba(88, 81, 80, 0.4)'
           mt="4"
           position="relative"
         >
           <Image src="/node.png" />
         </Circle>
-       
+       </Tooltip>
+       <Tooltip hasArrow label='EXPRESS' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Circle
-          size="90px"
-          bg="rgba(221, 196, 203, 0.5)"
-          boxShadow="5px 10px 20px 2px #687170"
+          size="5.2rem"
+          bg="rgba(221, 196, 203, 0.38)"
+          boxShadow='10px 0px 10px 0px rgba(88, 81, 80, 0.4)'
           mt="4"
           position="relative"
         >
           <Image src="/express2.png" />
         </Circle>
+       </Tooltip>
+       <Tooltip hasArrow label='PostgreSQL' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Circle
-          size="90px"
-          bg="rgba(221, 196, 203, 0.5)"
-          boxShadow="5px 10px 20px 2px #687170"
+          size="5.2rem"
+          bg="rgba(221, 196, 203, 0.38)"
+          boxShadow='10px 0px 10px 0px rgba(88, 81, 80, 0.4)'
           mt="4"
           position="relative"
         >
           <Image src="/postg.png" alt='postgresql'/>
         </Circle>
+       </Tooltip>
       </SimpleGrid>
     </Grid>
   );
