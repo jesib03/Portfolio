@@ -5,12 +5,12 @@ import ProjectCard from './ProjectCard'
 const projects = [{
   title: 'ProjUnity Website',
   technologies: ['React.js', 'Next.js', 'Javascript', 'Redux', 'Node.js', 'Express'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+    description: 'I participated as a Frontend Developer in a group project focused on creating a collaborative work platform. I contributed to the development of an administration panel that streamlines the management of projects and users, with detailed reports on sales, ratings, and user/project administration. I utilized technologies such as JavaScript, React, Redux, Next.js, Express, Node, MongoDB, PostgreSQL, Sequelize, CSS, ChakraUI, and HTML',
     github: 'https://github.com/johndoe/project-name',
     deploy: 'https://project-name.com'
 },
 {
-  title: 'Project Title',
+  title: '"Rick and Morty" Project',
   technologies: ['React', 'Nodejs', 'Express'],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
     github: 'https://github.com/johndoe/project-name',
