@@ -13,6 +13,7 @@ import Home from "../components/Home";
 
 function MainPage() {
   return (
+    
     <Grid>
       <section id="home">
        <Home />

@@ -70,7 +70,7 @@ function Home() {
                 color="rgb(213 41 166 / 100%)"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1iTIdBXZ0RbpZ7QSomwbOXoa9K2shfquI/view?usp=sharing",
+                    "https://drive.google.com/file/d/1fguDJlhvSVZZS-d7ppCyUGi7Zvg6eHge/view?usp=sharing",
                     "_blank"
                   )
                 }
