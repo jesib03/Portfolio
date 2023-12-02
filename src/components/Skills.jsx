@@ -97,7 +97,7 @@ function Skills() {
         </Tooltip>
         <Tooltip hasArrow label='ChakraUI' bgColor='#D570A6' placement="top" fontWeight='700'>
          <Circle
-          size="5.2rem"
+          size="69%"
           bg="rgba(221, 196, 203, 0.38)"
           boxShadow='10px 0px 10px 0px rgba(88, 81, 80, 0.4)'
           mt="4"
@@ -108,7 +108,7 @@ function Skills() {
         </Tooltip>
         <Tooltip hasArrow label='ChartJS' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Circle
-          size="5.2rem"
+          size="69%"
           bg="rgba(221, 196, 203, 0.38)"
           boxShadow='10px 0px 10px 0px rgba(88, 81, 80, 0.4)'
           mt="4"
@@ -132,7 +132,7 @@ function Skills() {
         </Tooltip>
         <Tooltip hasArrow label='NODE.JS' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Circle
-          size="5.2rem"
+          size="69%"
           bg="rgba(221, 196, 203, 0.38)"
           boxShadow='10px 0px 10px 0px rgba(88, 81, 80, 0.4)'
           mt="4"
@@ -143,7 +143,7 @@ function Skills() {
        </Tooltip>
        <Tooltip hasArrow label='EXPRESS' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Circle
-          size="5.2rem"
+          size="69%"
           bg="rgba(221, 196, 203, 0.38)"
           boxShadow='10px 0px 10px 0px rgba(88, 81, 80, 0.4)'
           mt="4"
@@ -154,7 +154,7 @@ function Skills() {
        </Tooltip>
        <Tooltip hasArrow label='PostgreSQL' bgColor='#D570A6' placement="top" fontWeight='700'>
         <Circle
-          size="5.2rem"
+          size="69%"
           bg="rgba(221, 196, 203, 0.38)"
           boxShadow='10px 0px 10px 0px rgba(88, 81, 80, 0.4)'
           mt="4"

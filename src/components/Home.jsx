@@ -63,11 +63,12 @@ function Home() {
                 using the most recent technologies.
               </Text>
             </Grid>
-            <Flex mt="2rem" justifyContent="center" alignItems="center" gap="9">
+            <Flex mt="2rem" justifyContent="space-around" alignItems="center" gap="2">
               <Button
-                className="bg-white p-[1.75rem] border-0 rounded-[.75rem] font-semibold text-lg uppercase whitespace-nowrap flex justify-center items-center shadow-white transition-shadow hover:shadow-none"
-                style={{ backdropFilter: "blur(4rem)", width: "14rem" }}
+                className="bg-white border-0 rounded-[.75rem] font-semibold text-lg uppercase flex backdrop-blur-[4rem] w-[12rem] justify-center text-center items-center shadow-white transition-shadow hover:shadow-none"
+                
                 color="rgb(213 41 166 / 100%)"
+                p='1.75rem'
                 onClick={() =>
                   window.open(
                     "https://drive.google.com/file/d/1fguDJlhvSVZZS-d7ppCyUGi7Zvg6eHge/view?usp=sharing",
@@ -81,7 +82,7 @@ function Home() {
               </Button>
               <Link href='#contact'>
               <Button
-                className="whitespace-nowrap p-[1.75rem] rounded-[.75rem] font-bold text-lg border-solid border-[1px] border-[#FFFFFF] bg-transparent text-center backdrop-blur-[4rem] w-[14rem] text-[#FFFFFF] shadow-white transition-shadow hover:bg-transparent hover:shadow-none"               
+                className="p-[1.75rem] rounded-[.75rem] font-bold text-lg border-solid border-[1px] border-[#FFFFFF] bg-transparent text-center backdrop-blur-[4rem] w-[12rem] text-[#FFFFFF] shadow-white transition-shadow hover:bg-transparent hover:shadow-none"               
               >
                 Contact me
               </Button>
@@ -92,14 +93,14 @@ function Home() {
                 width="100px" // Establece el ancho deseado
                 height="78px" // Establece la altura deseada
                 decoding="async"
-                data-nimg="1"
+               
                 className="w-[60px] md:w-[100px]" // Establece las clases de estilo personalizado
                 style={{ color: "transparent" }}
                 src="https://alaaweb.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow.49f542fe.png&w=256&q=75"
               />
             </Flex>
           </Box>
-          <Box flex="">
+          <Box >
             <Image
               alt="image"
               loading="eager"
@@ -107,12 +108,11 @@ function Home() {
               height="530"
               decoding="async"
               style={{ color: "transparent" }}
-              // srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSaly-1.aa368516.png&w=640&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSaly-1.aa368516.png&w=1080&q=75 2x"
               src="https://alaaweb.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSaly-1.aa368516.png&w=1080&q=75"
             />
           </Box>
         </Flex>
-        <Box mt="-6em" ml="16" pl="90px" pr="100px">
+        <Box mt="-2em" ml="10" pl="4em" pr="4em">
           <SocialButtonsGroup />
         </Box>
     </Grid>

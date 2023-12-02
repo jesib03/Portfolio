@@ -8,7 +8,13 @@ export const metadata = {
   title: "Jessi Portfolio",
   description: "My personal portfolio",
   keywords: "portfolio, nextjs, tailwindcss",
-  image: "/logoJess.svg",
+  icons: {
+    icon: "/logoJess.png",
+    shortcut: "/logoJess.png",
+    apple: "/logoJess.png",
+    other: "/logoJess.png",
+    maskable: "/logoJess.png",
+  }
 
 };
 
@@ -23,7 +29,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:image" content={metadata.image} />
-        <link rel="icon" type="image/ico" href={metadata.image} />
+        <link rel="icon" type="image/ico" href={metadata.icons.icon} />
       </Head>
       <body>
         <NavBar />
