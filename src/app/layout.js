@@ -3,6 +3,7 @@ import { Providers } from "./providers";
 import Head from 'next/head';
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export const metadata = {
   title: "Jessi Portfolio",
@@ -33,7 +34,10 @@ export default function RootLayout({ children }) {
       </Head>
       <body>
         <NavBar />
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          <ThemeSwitcher />
+          </Providers>
         <Footer />
       </body>
     </html>

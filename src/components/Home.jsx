@@ -24,17 +24,21 @@ function Home() {
           pl="100px"
           pr="100px"
           pt="1rem"
-          mt={2}
+          mt={[4, 8]}
         >
           <Box flex="1">
             <Grid gap={4}>
               <Text
                 fontSize="20px"
                 fontWeight="bold"
-                bgGradient="linear(-200deg, #244081c7, #ce6eae, #ba2f9c 29%, rgba(20,160,160,.8) 69.58%, #752482 82.07%, #b31c58 95.62%)"
+                bgGradient={[
+                  'linear(to-tr, #7928CA, #FF0080)',
+                  'linear(to-t, #7928CA, #FF0080)',
+                  'linear(to-b, #7928CA, #FF0080)',
+                ]}
                 bgClip="text"
                 letterSpacing=".1em"
-                color="transparent"
+               color="transparent"
               >
                 Hello There!
               </Text>
@@ -45,7 +49,11 @@ function Home() {
                 I'm Jessica Brito
               </Text>
               <Text
-                bgGradient="linear(-200deg, #244081c7, #ce6eae, #ba2f9c 29%, rgba(20,160,160,.8) 69.58%, #752482 82.07%, #b31c58 95.62%)"
+                 bgGradient={[
+                  'linear(to-tr, #7928CA, #FF0080)',
+                  'linear(to-t, #7928CA, #FF0080)',
+                  'linear(to-b, #7928CA, #FF0080)',
+                ]}
                 bgClip="text"
                 fontSize="5xl"
                 fontWeight="bold"

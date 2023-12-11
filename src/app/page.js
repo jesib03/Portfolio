@@ -14,7 +14,7 @@ import Home from "../components/Home";
 function MainPage() {
   return (
     
-    <Grid>
+    <Grid className="dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
       <section id="home">
        <Home />
       </section>

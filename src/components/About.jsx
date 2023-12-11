@@ -17,23 +17,23 @@ function About() {
           opacity="1"
            src="https://alaaweb.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fabouttt.c4a84d46.png&w=828&q=75" />
         </Box>
-        <Box flex='1' flexDirection='column' >
-          <Text fontSize='lg' color='#242B33' fontWeight='400' pr='4' mb='6' className='leading-relaxed'>
+        <Box flex='1' flexDirection='column'>
+          <Text fontSize='lg' color='#242B33' fontWeight='400' pr='4' mb='6' className='leading-relaxed dark:text-white'>
           I am a front-end developer who constantly seeks out innovate solutions to everyday problem. 
           I'm a challenger by heart, and builder by nature. 
           I have spent time converting designs into pixel-perfect, performat, accesible and responsive applications/websites, with a variety of front-end development technologies, using Modern frameworks. 
           You can simple describe me as a front end developer addict.
           </Text>
           <Divider orientation='horizontal' color='white' width='80%' mb='6'/>
-          <Text fontSize='lg' color='#242B33' fontWeight='400'>
+          <Text fontSize='lg' color='#242B33' fontWeight='400' className="dark:text-white">
             <IconButton aria-label="location" icon={<LocationOnIcon />} color="#D570A6" _hover={'bg-trasparent'}/>
           Argentina
           </Text>
-          <Text fontSize='lg' color='#242B33' fontWeight='400'>
+          <Text fontSize='lg' color='#242B33' fontWeight='400' className="dark:text-white">
             <IconButton aria-label="phone" icon={<PhoneIcon />} color="#D570A6" _hover={'bg-trasparent'} />
             +542616159049
           </Text>
-          <Text fontSize='lg' color='#242B33' fontWeight='400'>
+          <Text fontSize='lg' color='#242B33' fontWeight='400' className="dark:text-white">
             <IconButton aria-label="email" icon={<MailIcon />} color="#D570A6" _hover={'bg-trasparent'}  />
             jesib03@hotmail.com
           </Text>

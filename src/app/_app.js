@@ -10,7 +10,7 @@ const colors = {
     pink: {
       50: "#fce4ec",
       100: "#FF0080",
-      500: "##CE45A7", // Define el tono de rosa que desees
+      500: "#CE45A7", // Define el tono de rosa que desees
     },
     gray: {
       200: "#C7BFC8",
