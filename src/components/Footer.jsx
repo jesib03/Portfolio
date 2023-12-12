@@ -26,6 +26,7 @@ function Footer() {
       pr="100px"
       pt="1.75rem"
       pb="1.75rem"
+      position='relative'
     >
       <Flex width="100%" justifyContent="space-between" alignItems="center">
         <Grid gap="1.75rem">

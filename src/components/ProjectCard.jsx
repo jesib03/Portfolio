@@ -34,6 +34,7 @@ function ProjectCard({ projects }) {
           paddingRight="1.5rem"
           paddingTop="0.5rem"
           paddingBottom="1rem"
+          className="dark:bg-[#F0F0F7]"
         >
           <CardHeader>
             <Heading size="lg" textAlign="center" mb="-2">
@@ -108,6 +109,15 @@ function ProjectCard({ projects }) {
             right="-40"
             top="40%"
           ></Image>
+          <Image 
+          src={project.image}
+          position="absolute"
+          height='8em'
+          width='14em'
+          left='-9em'
+          top='20%'
+          className="rotate-[-20grad] shadow-sm"
+          />
         </Card>
       ))}
     </VStack>

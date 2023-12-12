@@ -6,21 +6,22 @@ const projects = [{
   title: 'ProjUnity Website',
   technologies: ['Javascript','React.js', 'Next.js', 'ChakraUI', 'NextUI', 'Redux', 'Node.js', 'Express'],
     description: 'I participated as a Frontend Developer in a group project. I contributed to the development of an administration panel that streamlines the management of projects and users, with detailed reports on sales, ratings, and user/project administration.',
-    github: 'https://github.com/johndoe/project-name',
+    github: 'https://github.com/jesib03/projunity',
+    deploy: 'https://project-name.com',
+    image: '/projunity.png'
+},
+{
+  title: '"DOGS" Project',
+  technologies: ['React', 'CSS', 'Redux', 'Nodejs', 'Express', 'PostgreSQL'],
+    description: "The 'Dogs' project is a web platform that allows you to explore detailed information about different dog breeds and share pictures of your favorite pets. The project's mission is to promote knowledge about canine breeds, foster love for dogs, and facilitate learning.",
+    github: 'https://github.com/jesib03/DogsProject',
     deploy: 'https://project-name.com'
 },
 {
   title: '"Rick and Morty" Project',
   technologies: ['React', 'Redux', 'Nodejs', 'Express', 'CSS'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
-    github: 'https://github.com/johndoe/project-name',
-    deploy: 'https://project-name.com'
-},
-{
-  title: 'Project Title',
-  technologies: ['React', 'CSS', 'Redux', 'Nodejs', 'Express', 'PostgreSQL'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
-    github: 'https://github.com/johndoe/project-name',
+    description: 'I developed an interactive website inspired by "Rick and Morty" and implemented key features such as login, character exploration, and favorites management.',
+    github: 'https://github.com/jesib03/Integrador-RickandMorty',
     deploy: 'https://project-name.com'
 }]
 
