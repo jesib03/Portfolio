@@ -109,15 +109,21 @@ function ProjectCard({ projects }) {
             right="-40"
             top="40%"
           ></Image>
-          <Image 
-          src={project.image}
-          position="absolute"
-          height='8em'
-          width='14em'
-          left='-9em'
-          top='20%'
-          className="rotate-[-20grad] shadow-sm"
-          />
+         <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+          >
+            <Image
+              src={project.image}
+              position="absolute"
+              height='8em'
+              width='14em'
+              left='-9em'
+              top='20%'
+              className="rotate-[-20grad] shadow-sm"
+            />
+          </motion.div>
         </Card>
       ))}
     </VStack>
