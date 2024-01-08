@@ -1,4 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Jessica Brito - Frontend Developer
+Hello There! 👋
+
+I'm Jessica Brito, a passionate Frontend Developer based in Argentina. I thrive on building new things, creating impressive designs, and translating them into efficient code. With a background in Full Stack development, including database, backend, and frontend technologies, I've worked on numerous projects using the most recent and innovative technologies.
+
+About Me
+I'm not just a developer; I'm a problem solver and a creative thinker. Constantly seeking innovative solutions to everyday challenges, I approach each project with enthusiasm and a commitment to excellence. As a challenger by heart and a builder by nature, I specialize in converting designs into pixel-perfect, performant, accessible, and responsive applications and websites.
+
+Skills
+My skill set includes a variety of front-end development technologies, and I'm proficient in using modern frameworks to deliver high-quality results. Whether it's creating intuitive user interfaces, optimizing performance, or ensuring accessibility, I take pride in my ability to deliver top-notch solutions.
+
+Projects
+Explore some of the projects I've worked on to get a glimpse of my coding expertise and design aesthetics. Each project showcases my dedication to delivering a seamless user experience and my commitment to staying current with the latest technologies.
+
+Contact
+Feel free to reach out if you have any questions, collaboration opportunities, or just want to connect. I'm always open to new challenges and exciting projects!
+
+Location: Argentina
+Phone: +542616159049
+Email: jesib03@hotmail.com
+Let's build something amazing together! 🚀
 
 ## Getting Started
 
