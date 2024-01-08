@@ -178,7 +178,7 @@ function Contact() {
             {!email || emailError ? (
               <FormErrorMessage>Email is not valid.</FormErrorMessage>
             ) : (
-              <FormHelperText>We'll never share your email.</FormHelperText>
+              <FormHelperText>I will never share your email.</FormHelperText>
             )}
 
             <FormLabel
@@ -232,6 +232,7 @@ function Contact() {
       </Flex>
       <Image
         src="https://alaaweb.vercel.app/_next/static/media/contactGirl.d385586e.svg"
+        alt='imagencontacto'
         w="220px"
         right="24"
         top="228em"
