@@ -47,7 +47,7 @@ function About() {
             className="leading-relaxed dark:text-white"
           >
             I am a front-end developer who constantly seeks out innovate
-            solutions to everyday problem. I'm a challenger by heart, and
+            solutions to everyday problem. I am a challenger by heart, and
             builder by nature. I have spent time converting designs into
             pixel-perfect, performat, accesible and responsive
             applications/websites, with a variety of front-end development

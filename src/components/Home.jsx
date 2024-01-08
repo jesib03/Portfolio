@@ -39,7 +39,7 @@ function Home() {
               fontSize="4xl" // Tamaño de fuente más grande
               color="white" // Color blanco
             >
-              I'm Jessica Brito
+              I am Jessica Brito
             </Text>
             <Text
               bgGradient={[
