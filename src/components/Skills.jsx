@@ -229,7 +229,7 @@ function Skills() {
             mt="4"
             position="relative"
           >
-            <Image src="/node.png" />
+            <Image src="/node.png" alt="imagennode"/>
           </Circle>
         </Tooltip>
         <Tooltip
@@ -246,7 +246,7 @@ function Skills() {
             mt="4"
             position="relative"
           >
-            <Image src="/express2.png" />
+            <Image src="/express2.png" alt="imagenexpress"/>
           </Circle>
         </Tooltip>
         <Tooltip

@@ -30,7 +30,7 @@ function Footer() {
     >
       <Flex width="100%" justifyContent="space-between" alignItems="center">
         <Grid gap="1.75rem">
-          <Image src="./logoJess.png" w="80px" h="70px" />
+          <Image src="./logoJess.png" w="80px" h="70px" alt="logo"/>
           <Text fontSize="18px" width="80%" color="gray.500">
             I like building new things and creating designs and develop them
             into code. I worked on many projects as a developer using most

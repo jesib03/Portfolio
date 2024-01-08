@@ -102,6 +102,7 @@ function ProjectCard({ projects }) {
           </Flex>
           <Image
             src="https://fffuel.co/images/ssshape/svg-shape-11.svg"
+            alt='imagen'
             position="absolute"
             zIndex="-10"
             height="300px"
@@ -116,6 +117,7 @@ function ProjectCard({ projects }) {
           >
             <Image
               src={project.image}
+              alt="imagen del proyecto"
               position="absolute"
               height='8em'
               width='14em'

@@ -122,7 +122,7 @@ function Contact() {
         width="100%"
       >
         <Box width="40%" mt="-1.75rem" maxWidth="25em">
-          <Image src="https://alaaweb.vercel.app/_next/static/media/contactImgs.2ecc8e0e.svg" />
+          <Image src="https://alaaweb.vercel.app/_next/static/media/contactImgs.2ecc8e0e.svg" alt="imagen de contacto"/>
         </Box>
 
         <form ref={form} onSubmit={sendEmail}>
